@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="start">
+        <button onclick="start()">start</button>
+    </div>
+    <div id="game" style="display: none;">
+        <form id="form1" name="form1">
+            <div>
+                <lable>
+                    What is the State Fish of Alaska?
+                </lable><br>
+                <input type="radio" name="fish1" value="kingSalmon" id="true1">King Salmon<br>
+                <input type="radio" name="fish1" value=""> Rockfish<br>
+                <input type="radio" name="fish1" value=""> Gheribaldi<br>
+                <input type="radio" name="fish1" valu=""> Other
+            </div>
+            <div>
+                <lable>
+                    What is the State Fish of California?
+                </lable><br>
+                <input type="radio" name="fish2" value="kingSalmon">Rockfish <br>
+                <input type="radio" name="fish2" value=""> Striped Bass<br>
+                <input type="radio" name="fish2" value="" id="true2">Geribaldi<br>
+                <input type="radio" name="fish2" valu=""> King Salmon
+            </div>
+            <div>
+                <lable>
+                    What is the State Fish of Maryland?
+                </lable><br>
+                <input type="radio" name="fish3" value="kingSalmon"> King Salmon<br>
+                <input type="radio" name="fish3" value="" id="true3"> Rockfish<br>
+                <input type="radio" name="fish3" value=""> King Salmon<br>
+                <input type="radio" name="fish3" valu=""> Gheribaldi
+            </div>
+            <div>
+                <lable>
+                    What is the State Fish of Oklahoma?
+                </lable><br>
+                <input type="radio" name="fish4" value="kingSalmon"> King Salmon<br>
+                <input type="radio" name="fish4" value=""> Stripped Bass<br>
+                <input type="radio" name="fish4" value="" id="true4"> White Bass<br>
+                <input type="radio" name="fish4" valu=""> Rockfish
+            </div>
+            <div>
+                <lable>
+                    What is the State Fish of South Carolina?
+                </lable><br>
+                <input type="radio" name="fish5" value="kingSalmon"> King Salmon<br>
+                <input type="radio" name="fish5" value=""> White Bass<br>
+                <input type="radio" name="fish5" value=""> Geribaldi<br>
+                <input type="radio" name="fish5" valu="" id="true5"> Striped Bass
+            </div>
+            <input type="submit" onclick="end(event)">
+        </form><br>
+        <div id="timer">Time Left: 30</div>
+    </div>
+    <div id="results" style="display: none;">
+        <div id="correct"></div>
+        <div id="incorrect"></div>
+        <div id="unanswered"></div>
+    </div>
+</body>
+</html>
